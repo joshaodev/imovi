@@ -14,12 +14,82 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="./plugin/bootstrap/css/bootstrap.min.css">
     <!-- Bootstrap Icon -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./plugin/bootstrap/icon/bootstrap-icons.css">
     <!-- Owner CSS -->
     <link rel="stylesheet" href="./style/main.css">
 </head>
 <body>
-    <h1>titulo</h1>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg fixed-top bg-primary-color" id="navbar">
+        <div class="container py-3">
+          <a href="#" class="navbar-brand">
+            <img src="./images/imovi-icon.png" alt="iMovi">
+            <span>iMovi</span>
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-items" aria-controls="navbar-items" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-list"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbar-items">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a href="#" class="nav-link active" aria-current="page">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">Projectos</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link">Imóveis</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link">Contactos</a>
+                </li>
+              </ul> 
+          </div>
+        </div>
+    </nav>
+    <!-- SLIDER -->
+    <div class="container" id="slider-container">
+        <div class="carousel slide" id="slider" data-bs-ride="carousel">
+            <!-- Slide indicators -->
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#slider" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#slider" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#slider" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <!-- Slider elements -->
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./images/banner-1.jpg" alt="Casa 1" class="d-block w-100">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Casas Planejadas</h5>
+                  <a href="#" class="btn btn-dark">Ver Projectos</a>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="./images/banner-2.jpg" alt="Casa 2" class="d-block w-100">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Projectos complexos</h5>
+                  <a href="#" class="btn btn-dark">Ver Projectos</a>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="./images/banner-3.jpg" alt="Casa 3" class="d-block w-100">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Projectos Inovadores</h5>
+                  <a href="#" class="btn btn-dark">Ver Projectos</a>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#slider"  data-bs-slide="prev">
+              <i class="bi bi-chevron-compact-left"></i>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#slider"  data-bs-slide="next">
+              <i class="bi bi-chevron-compact-right"></i>
+              <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    <div>
 
     <!-- Bootstrap Bundle with Popper -->
     <script src="./plugin/bootstrap/js/bootstrap.bundle.min.js"></script>
